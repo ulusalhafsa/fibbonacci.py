@@ -1,10 +1,12 @@
-def dec2fib(dec):
+
+´´´python def dec2fib(dec):
 	sayi = int(dec)
 	i=1
 	j=0
 	dizi1, dizi2 =[], []
 	while dec >=1:
 		while fib(i)[-1] < dec:
+		
 			i=i+1
 		i=i-1     
 		if dec == sayi:     
