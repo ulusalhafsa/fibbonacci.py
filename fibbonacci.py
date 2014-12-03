@@ -9,14 +9,14 @@ def dec2fib(dec):
 		i=i-1     
 		if dec==sayi:     
 			p=i+1 
-		dizi2.append(fib[i][-1])     
+		dizi2.insert(0,fib[i][-1])     
 		dec=dec-fib[i][-1]
 		i = 1
-	while j< p+1:     
+	while j<p+1:     
 		if fib[p][j] in dizi2:
-			dizi1.append("1") 
+			dizi1.insert(0,"1") 
 		else:
-			dizi1.append("0")
+			dizi1.insert(0,"0")
 		j=j+1
 		sonuc = ''.join(dizi1)     
 	return str(sonuc)
@@ -27,7 +27,7 @@ def fib2dec(fib):
 	j=0
 	dec=0
 	while j<len(dizi1):
-		if dizi1[j] == "1":    
+		if dizi1[j]=="1":    
 			dec=dec+fib[len(dizi1)][j]
 		j=j+1
 	return dec
